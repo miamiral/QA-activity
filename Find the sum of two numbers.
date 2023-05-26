@@ -1,0 +1,28 @@
+def sum(n1, n2):
+    return n1 + n2
+
+def test_sum():
+    # Test case 1: Positive numbers
+    result = sum(3, 5)
+    assert result == 8, f"Expected 8, but got {result}"
+
+    # Test case 2: Negative numbers
+    result = sum(-2, -7)
+    assert result == -9, f"Expected -9, but got {result}"
+
+    # Test case 3: Zero and positive number
+    result = sum(0, 9)
+    assert result == 9, f"Expected 9, but got {result}"
+
+    # Test case 4: Zero and negative number
+    result = sum(0, -4)
+    assert result == -4, f"Expected -4, but got {result}"
+
+    # Test case 5: Zero and zero
+    result = sum(0, 0)
+    assert result == 0, f"Expected 0, but got {result}"
+
+    print("All test cases passed!")
+
+# Run the unit test
+test_sum()
